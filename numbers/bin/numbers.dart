@@ -12,4 +12,9 @@ void main(List<String> arguments) {
   print("sin of 60 $six");
   print(
       "Direct comparsion doesn't work sin of 30 is equal with coss 60 but return $state");
+  var roundState = cos((60 * pi) / 180).roundToDouble() ==
+      sin((30 * pi) / 180).roundToDouble();
+
+  print(
+      "Direct comparsion doesn't work sin of 30 is equal with coss 60 but return $roundState");
 }
