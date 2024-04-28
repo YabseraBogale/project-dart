@@ -8,5 +8,5 @@ void main() {
       count += 1;
     }
   }
-  print(count);
+  print("there is $count number of files");
 }
