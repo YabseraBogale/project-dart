@@ -1,5 +1,8 @@
-import 'package:listdir/listdir.dart' as listdir;
+import 'dart:io';
 
-void main(List<String> arguments) {
-  print('Hello world: ${listdir.calculate()}!');
+void main() {
+  var start = Directory('.');
+  for (var i in start.listSync(recursive: false, followLinks: true)) {
+    print(i);
+  }
 }
