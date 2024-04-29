@@ -1,11 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Box</title>
-</head>
-<body>
-    <input type="text" name="" id="platenumber">
-</body>
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>AutoComplete</title> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"> 
+	</script> 
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js"> 
+	</script> 
+	
+	<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/ui-lightness/jquery-ui.css"
+		rel="stylesheet" type="text/css" /> 
+</head> 
+<body> 
+	<h1>Welcome to GFG</h1> 
+	<input type="text" id="tags"> 
+	
+	<script> 
+$( function() { 
+	var availableTags = [ 
+		"Yabsera","Bogale"
+	]; 
+	$( "#tags" ).autocomplete({ 
+	source: availableTags 
+	}); 
+} ); 
+</script> 
+	
+</body> 
 </html>
