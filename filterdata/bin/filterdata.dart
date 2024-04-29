@@ -9,4 +9,5 @@ void main() async {
           password: 'Deathandlife13579'),
       settings: ConnectionSettings(sslMode: SslMode.disable));
   print(connection.isOpen);
+  await connection.close();
 }
