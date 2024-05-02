@@ -1,7 +1,8 @@
 import 'dart:io';
 
 void main() {
-  int? a = stdin.readByteSync();
+  print("Enter the coffient");
 
-  print(int.parse(String.fromCharCode(a)));
+  num? a = num.parse(stdin.readLineSync()!);
+  print(a);
 }
