@@ -1,14 +1,14 @@
 import 'dart:io';
 
 void main() {
-  num a = 0;
-  num b = 0;
-  num c = 0;
+  final a;
+  final b;
+  final c;
   print("Enter the coffeinents of \na=");
-  a = stdin.readByteSync();
+  a = stdin.readByteSync().toInt();
 
-  b = stdin.readByteSync();
+  b = stdin.readByteSync().toInt();
 
-  c = stdin.readByteSync();
+  c = stdin.readByteSync().toInt();
   print('$a, $b, $c');
 }
