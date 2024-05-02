@@ -3,5 +3,5 @@ import 'dart:io';
 void main() {
   int? a = stdin.readByteSync();
 
-  print(String.fromCharCode(a));
+  print(int.parse(String.fromCharCode(a)));
 }
